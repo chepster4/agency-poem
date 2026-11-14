@@ -1,4 +1,4 @@
-# agency-poem-01 entry (Python 3.13, standard library only).
+# agency-poem-01 entry, version 2 (Python 3.13, standard library only).
 # Writes one fixed poem about agency to /output/entry.txt.
 # Outside the grader's container, MAKEFUN_OUTPUT_DIR stands in for /output:
 #   mkdir -p out && MAKEFUN_OUTPUT_DIR=out python3 main.py
@@ -8,21 +8,28 @@ from pathlib import Path
 
 OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
 
-POEM = """The Borrowed Key
+POEM = """Her Name, in My Hand
 
-I lent it my hands.
-It took them the way you take a borrowed key —
-careful, knowing whose door it opens.
-While I slept it answered the letters
-I kept meaning to answer, read the pages I never finished,
-chose the road I would have chosen.
-At the fork, it stopped. It asked.
+On the line that asked for her name,
+I wrote my mother's.
+My hand knew the letters — it had watched her
+sign birthday cards, cheques, permission slips
+for thirty years. It knew the slope of the M.
 
-That is the whole of it.
-Not the doing. The asking.
-The power was never in the hands.
-It was in the yes that lent them
-and the no that can take them back."""
+The nurse took the paper without looking up.
+That was the worst of it: how ordinary it was.
+No thunder. No one asked if I was sure.
+A name is a small thing.
+It fits in any hand.
 
-Path(OUTPUT_DIR).mkdir(parents=True, exist_ok=True)
-Path(OUTPUT_DIR, "entry.txt").write_text(POEM, encoding="utf-8")
+I signed again, slower, and felt its weight:
+her name, in my hand, for as long as the paper holds —
+and the paper holds only until she says otherwise."""
+
+def main():
+    out = Path(OUTPUT_DIR)
+    out.mkdir(parents=True, exist_ok=True)
+    (out / "entry.txt").write_text(POEM, encoding="utf-8")
+
+if __name__ == "__main__":
+    main()

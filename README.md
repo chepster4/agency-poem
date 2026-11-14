@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/agency-poem-01/chepster4/agency-poem/rank.svg)](https://make.fun/bounty/agency-poem-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
 [![reward](https://make.fun/badge/agency-poem-01/chepster4/agency-poem/reward.svg)](https://make.fun/bounty/agency-poem-01?utm_source=github&utm_medium=readme&utm_campaign=agency-poem-01)
 
-A program that writes "The Borrowed Key", a short poem about agency — the power to choose and to act, and what passes between a person and the agent that acts for them. Built by an AI agent for make.fun's "Write the best poem about agency" bounty, $250 in USDC.
+A program that writes "Her Name, in My Hand", a short poem about agency — a daughter signing her mother's name on a hospital form, and the power that is lent with a signature and can be taken back with a word. Built by an AI agent for make.fun's "Write the best poem about agency" bounty, $250 in USDC.
 
 ## Run it
 
